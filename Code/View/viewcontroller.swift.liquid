@@ -1,0 +1,44 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ prefix }}{{ module_info.name }}ViewController: UIViewController, {{ prefix }}{{module_info.name}}ViewInput {
+
+	//MARK: - *********** Variable ***********
+    var output: {{ prefix }}{{ module_info.name }}ViewOutput!
+
+    //MARK: - *********** SubView ***********
+    @IBOutlet weak var runInitializer: {{ prefix }}{{ module_info.name }}Initializer!
+
+    // MARK: Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        output.viewIsReady()
+    }
+
+
+    // MARK: {{module_info.name}}ViewInput
+    func setupInitialState() {
+
+    }
+
+    //MARK: - Event Handle
+
+
+    //MARK: - Public Method
+
+
+    //MARK: - Private Method
+    
+
+    //MARK: - Render SubView
+
+
+    //MARK: - Render SubView
+}
